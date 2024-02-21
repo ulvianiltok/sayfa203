@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewMesaj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="223dp"
+        android:layout_marginBottom="84dp"
+        android:text="Mesaj"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonAsker"
+        app:layout_constraintEnd_toEndOf="@+id/buttonAsker"
+        app:layout_constraintStart_toStartOf="@+id/buttonAsker"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonAsker"
+        android:layout_width="198dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="55dp"
+        android:text="Asker ateş et"
+        app:layout_constraintBottom_toTopOf="@+id/buttonTankci"
+        app:layout_constraintEnd_toEndOf="@+id/buttonTankci"
+        app:layout_constraintStart_toStartOf="@+id/buttonTankci"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMesaj" />
+
+    <Button
+        android:id="@+id/buttonTankci"
+        android:layout_width="198dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="43dp"
+        android:text="Tankçı ateş et"
+        app:layout_constraintBottom_toTopOf="@+id/buttonTopcu"
+        app:layout_constraintEnd_toEndOf="@+id/buttonTopcu"
+        app:layout_constraintStart_toStartOf="@+id/buttonTopcu"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAsker" />
+
+    <Button
+        android:id="@+id/buttonTopcu"
+        android:layout_width="198dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="142dp"
+        android:text="Topçu ateş et"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonTankci" />
+</androidx.constraintlayout.widget.ConstraintLayout>
